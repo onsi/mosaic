@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19A748E82BF982BD3072D351 /* Pods_Mosaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D930316BB458B35951AE48F1 /* Pods_Mosaic.framework */; };
+		23BA2685FFF1ED857E8AB8E4 /* Pods_MosaicLauncher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14BF98D01DA95ADFF08D99FD /* Pods_MosaicLauncher.framework */; };
+		9821403F22B3EBD900ABFB3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9821403E22B3EBD900ABFB3F /* AppDelegate.swift */; };
+		9821404322B3EBDA00ABFB3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9821404222B3EBDA00ABFB3F /* Assets.xcassets */; };
+		9821404622B3EBDA00ABFB3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9821404422B3EBDA00ABFB3F /* Main.storyboard */; };
+		9821405B22B3ECCA00ABFB3F /* MosaicLauncher.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9821403C22B3EBD900ABFB3F /* MosaicLauncher.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9821405E22B3ED3600ABFB3F /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9821405D22B3ED3600ABFB3F /* ServiceManagement.framework */; };
+		9824700D22AF9B7D0037B409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824700C22AF9B7D0037B409 /* AppDelegate.swift */; };
+		9824701122AF9B7E0037B409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9824701022AF9B7E0037B409 /* Assets.xcassets */; };
+		9824701422AF9B7E0037B409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9824701222AF9B7E0037B409 /* Main.storyboard */; };
+		9824702F22AFA2E50037B409 /* AccessibilityAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824702E22AFA2E50037B409 /* AccessibilityAuthorization.swift */; };
+		9824703122AFA8470037B409 /* MosaicStatusItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824703022AFA8470037B409 /* MosaicStatusItem.swift */; };
+		9824703722B0F3200037B409 /* WindowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824703622B0F3200037B409 /* WindowAction.swift */; };
+		9824703922B0F37C0037B409 /* ShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824703822B0F37C0037B409 /* ShortcutManager.swift */; };
+		9824703D22B13C7E0037B409 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824703C22B13C7E0037B409 /* Window.swift */; };
+		9824703F22B13FBC0037B409 /* ScreenDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824703E22B13FBC0037B409 /* ScreenDetection.swift */; };
+		9824704122B186D00037B409 /* WindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9824704022B186D00037B409 /* WindowManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9821405A22B3EC9900ABFB3F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				9821405B22B3ECCA00ABFB3F /* MosaicLauncher.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0796D218CC3C7CD563827A8D /* Pods-RectangleLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleLauncher.release.xcconfig"; path = "Target Support Files/Pods-RectangleLauncher/Pods-RectangleLauncher.release.xcconfig"; sourceTree = "<group>"; };
+		14BF98D01DA95ADFF08D99FD /* Pods_MosaicLauncher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MosaicLauncher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		267FB01A8AADAE07B8067ADD /* Pods-Mosaic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mosaic.release.xcconfig"; path = "Target Support Files/Pods-Mosaic/Pods-Mosaic.release.xcconfig"; sourceTree = "<group>"; };
+		45A699541D2DD6714CD74E40 /* Pods-MosaicLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicLauncher.debug.xcconfig"; path = "Target Support Files/Pods-MosaicLauncher/Pods-MosaicLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		53A6B6ACF05CD88EB34E0D00 /* Pods-Rectangle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rectangle.debug.xcconfig"; path = "Target Support Files/Pods-Rectangle/Pods-Rectangle.debug.xcconfig"; sourceTree = "<group>"; };
+		80B094EEF6AE857D468B639A /* Pods-RectangleLauncher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleLauncher.debug.xcconfig"; path = "Target Support Files/Pods-RectangleLauncher/Pods-RectangleLauncher.debug.xcconfig"; sourceTree = "<group>"; };
+		9808018523D05C0B0077774A /* MosaicRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MosaicRelease.entitlements; sourceTree = "<group>"; };
+		9808018623D05C1F0077774A /* MosaicLauncherRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MosaicLauncherRelease.entitlements; sourceTree = "<group>"; };
+		9821403C22B3EBD900ABFB3F /* MosaicLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosaicLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9821403E22B3EBD900ABFB3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9821404222B3EBDA00ABFB3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9821404522B3EBDA00ABFB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9821404722B3EBDA00ABFB3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9821404822B3EBDA00ABFB3F /* MosaicLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MosaicLauncher.entitlements; sourceTree = "<group>"; };
+		9821405D22B3ED3600ABFB3F /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		9824700922AF9B7D0037B409 /* Mosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mosaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9824700C22AF9B7D0037B409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9824701022AF9B7E0037B409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9824701322AF9B7E0037B409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9824701522AF9B7E0037B409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9824701622AF9B7E0037B409 /* Mosaic.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mosaic.entitlements; sourceTree = "<group>"; };
+		9824702E22AFA2E50037B409 /* AccessibilityAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAuthorization.swift; sourceTree = "<group>"; };
+		9824703022AFA8470037B409 /* MosaicStatusItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicStatusItem.swift; sourceTree = "<group>"; };
+		9824703622B0F3200037B409 /* WindowAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowAction.swift; sourceTree = "<group>"; };
+		9824703822B0F37C0037B409 /* ShortcutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutManager.swift; sourceTree = "<group>"; };
+		9824703C22B13C7E0037B409 /* Window.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		9824703E22B13FBC0037B409 /* ScreenDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenDetection.swift; sourceTree = "<group>"; };
+		9824704022B186D00037B409 /* WindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowManager.swift; sourceTree = "<group>"; };
+		BEC31C8B34ECBC4B4E62F8F1 /* Pods-Mosaic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mosaic.debug.xcconfig"; path = "Target Support Files/Pods-Mosaic/Pods-Mosaic.debug.xcconfig"; sourceTree = "<group>"; };
+		BFFF93EBEA6E2FF7245A7CF5 /* Pods-Rectangle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rectangle.release.xcconfig"; path = "Target Support Files/Pods-Rectangle/Pods-Rectangle.release.xcconfig"; sourceTree = "<group>"; };
+		D930316BB458B35951AE48F1 /* Pods_Mosaic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mosaic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4AE568B8BDB98BF602D588 /* Pods-RectangleMAS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleMAS.release.xcconfig"; path = "Target Support Files/Pods-RectangleMAS/Pods-RectangleMAS.release.xcconfig"; sourceTree = "<group>"; };
+		E2625F45B180F733E8508494 /* Pods-RectangleMAS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RectangleMAS.debug.xcconfig"; path = "Target Support Files/Pods-RectangleMAS/Pods-RectangleMAS.debug.xcconfig"; sourceTree = "<group>"; };
+		E307050C5DA74EE250A03AEF /* Pods-MosaicLauncher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicLauncher.release.xcconfig"; path = "Target Support Files/Pods-MosaicLauncher/Pods-MosaicLauncher.release.xcconfig"; sourceTree = "<group>"; };
+		F4F1FB66CBFB958E8BB16DCD /* Pods_RectangleMAS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RectangleMAS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9821403922B3EBD900ABFB3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BA2685FFF1ED857E8AB8E4 /* Pods_MosaicLauncher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9824700622AF9B7D0037B409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9821405E22B3ED3600ABFB3F /* ServiceManagement.framework in Frameworks */,
+				19A748E82BF982BD3072D351 /* Pods_Mosaic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67F292BA10681FCA82000D3E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53A6B6ACF05CD88EB34E0D00 /* Pods-Rectangle.debug.xcconfig */,
+				BFFF93EBEA6E2FF7245A7CF5 /* Pods-Rectangle.release.xcconfig */,
+				80B094EEF6AE857D468B639A /* Pods-RectangleLauncher.debug.xcconfig */,
+				0796D218CC3C7CD563827A8D /* Pods-RectangleLauncher.release.xcconfig */,
+				E2625F45B180F733E8508494 /* Pods-RectangleMAS.debug.xcconfig */,
+				DE4AE568B8BDB98BF602D588 /* Pods-RectangleMAS.release.xcconfig */,
+				BEC31C8B34ECBC4B4E62F8F1 /* Pods-Mosaic.debug.xcconfig */,
+				267FB01A8AADAE07B8067ADD /* Pods-Mosaic.release.xcconfig */,
+				45A699541D2DD6714CD74E40 /* Pods-MosaicLauncher.debug.xcconfig */,
+				E307050C5DA74EE250A03AEF /* Pods-MosaicLauncher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9821403D22B3EBD900ABFB3F /* MosaicLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				9808018623D05C1F0077774A /* MosaicLauncherRelease.entitlements */,
+				9821403E22B3EBD900ABFB3F /* AppDelegate.swift */,
+				9821404222B3EBDA00ABFB3F /* Assets.xcassets */,
+				9821404422B3EBDA00ABFB3F /* Main.storyboard */,
+				9821404722B3EBDA00ABFB3F /* Info.plist */,
+				9821404822B3EBDA00ABFB3F /* MosaicLauncher.entitlements */,
+			);
+			path = MosaicLauncher;
+			sourceTree = "<group>";
+		};
+		9821405C22B3ED3600ABFB3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9821405D22B3ED3600ABFB3F /* ServiceManagement.framework */,
+				F4F1FB66CBFB958E8BB16DCD /* Pods_RectangleMAS.framework */,
+				D930316BB458B35951AE48F1 /* Pods_Mosaic.framework */,
+				14BF98D01DA95ADFF08D99FD /* Pods_MosaicLauncher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9824700022AF9B7D0037B409 = {
+			isa = PBXGroup;
+			children = (
+				9824700B22AF9B7D0037B409 /* Mosaic */,
+				9821403D22B3EBD900ABFB3F /* MosaicLauncher */,
+				9824700A22AF9B7D0037B409 /* Products */,
+				9821405C22B3ED3600ABFB3F /* Frameworks */,
+				67F292BA10681FCA82000D3E /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9824700A22AF9B7D0037B409 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9824700922AF9B7D0037B409 /* Mosaic.app */,
+				9821403C22B3EBD900ABFB3F /* MosaicLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9824700B22AF9B7D0037B409 /* Mosaic */ = {
+			isa = PBXGroup;
+			children = (
+				9824700C22AF9B7D0037B409 /* AppDelegate.swift */,
+				9824701022AF9B7E0037B409 /* Assets.xcassets */,
+				9824701222AF9B7E0037B409 /* Main.storyboard */,
+				9824701522AF9B7E0037B409 /* Info.plist */,
+				9808018523D05C0B0077774A /* MosaicRelease.entitlements */,
+				9824701622AF9B7E0037B409 /* Mosaic.entitlements */,
+				9824703022AFA8470037B409 /* MosaicStatusItem.swift */,
+				9824703622B0F3200037B409 /* WindowAction.swift */,
+				9824703822B0F37C0037B409 /* ShortcutManager.swift */,
+				9824703C22B13C7E0037B409 /* Window.swift */,
+				9824703E22B13FBC0037B409 /* ScreenDetection.swift */,
+				9824704022B186D00037B409 /* WindowManager.swift */,
+				9824702E22AFA2E50037B409 /* AccessibilityAuthorization.swift */,
+			);
+			path = Mosaic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9821403B22B3EBD900ABFB3F /* MosaicLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9821405422B3EBDA00ABFB3F /* Build configuration list for PBXNativeTarget "MosaicLauncher" */;
+			buildPhases = (
+				29FB3DDD8496454008602727 /* [CP] Check Pods Manifest.lock */,
+				9821403822B3EBD900ABFB3F /* Sources */,
+				9821403922B3EBD900ABFB3F /* Frameworks */,
+				9821403A22B3EBD900ABFB3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MosaicLauncher;
+			productName = RectangleLauncher;
+			productReference = 9821403C22B3EBD900ABFB3F /* MosaicLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9824700822AF9B7D0037B409 /* Mosaic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9824702422AF9B7E0037B409 /* Build configuration list for PBXNativeTarget "Mosaic" */;
+			buildPhases = (
+				E6D791631A87C2748EF5183E /* [CP] Check Pods Manifest.lock */,
+				9824700522AF9B7D0037B409 /* Sources */,
+				9824700622AF9B7D0037B409 /* Frameworks */,
+				9824700722AF9B7D0037B409 /* Resources */,
+				9821405A22B3EC9900ABFB3F /* CopyFiles */,
+				28805C67730FCF221CAEF5FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mosaic;
+			productName = Rectangle;
+			productReference = 9824700922AF9B7D0037B409 /* Mosaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9824700122AF9B7D0037B409 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ryan Hanson";
+				TargetAttributes = {
+					9821403B22B3EBD900ABFB3F = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					9824700822AF9B7D0037B409 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9824700422AF9B7D0037B409 /* Build configuration list for PBXProject "Mosaic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9824700022AF9B7D0037B409;
+			productRefGroup = 9824700A22AF9B7D0037B409 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9824700822AF9B7D0037B409 /* Mosaic */,
+				9821403B22B3EBD900ABFB3F /* MosaicLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9821403A22B3EBD900ABFB3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9821404322B3EBDA00ABFB3F /* Assets.xcassets in Resources */,
+				9821404622B3EBDA00ABFB3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9824700722AF9B7D0037B409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9824701122AF9B7E0037B409 /* Assets.xcassets in Resources */,
+				9824701422AF9B7E0037B409 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28805C67730FCF221CAEF5FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mosaic/Pods-Mosaic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mosaic/Pods-Mosaic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mosaic/Pods-Mosaic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29FB3DDD8496454008602727 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosaicLauncher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D791631A87C2748EF5183E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mosaic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9821403822B3EBD900ABFB3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9821403F22B3EBD900ABFB3F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9824700522AF9B7D0037B409 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9824702F22AFA2E50037B409 /* AccessibilityAuthorization.swift in Sources */,
+				9824703D22B13C7E0037B409 /* Window.swift in Sources */,
+				9824703F22B13FBC0037B409 /* ScreenDetection.swift in Sources */,
+				9824703122AFA8470037B409 /* MosaicStatusItem.swift in Sources */,
+				9824704122B186D00037B409 /* WindowManager.swift in Sources */,
+				9824703722B0F3200037B409 /* WindowAction.swift in Sources */,
+				9824700D22AF9B7D0037B409 /* AppDelegate.swift in Sources */,
+				9824703922B0F37C0037B409 /* ShortcutManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9821404422B3EBDA00ABFB3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9821404522B3EBDA00ABFB3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9824701222AF9B7E0037B409 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9824701322AF9B7E0037B409 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9821405522B3EBDA00ABFB3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A699541D2DD6714CD74E40 /* Pods-MosaicLauncher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MosaicLauncher/MosaicLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = MosaicLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsi.MosaicLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9821405622B3EBDA00ABFB3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E307050C5DA74EE250A03AEF /* Pods-MosaicLauncher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MosaicLauncher/MosaicLauncherRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = MosaicLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsi.MosaicLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9824702222AF9B7E0037B409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9824702322AF9B7E0037B409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9824702522AF9B7E0037B409 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC31C8B34ECBC4B4E62F8F1 /* Pods-Mosaic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mosaic/Mosaic.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Mosaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsi.mosaic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9824702622AF9B7E0037B409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267FB01A8AADAE07B8067ADD /* Pods-Mosaic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Mosaic/MosaicRelease.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Mosaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.onsi.mosaic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9821405422B3EBDA00ABFB3F /* Build configuration list for PBXNativeTarget "MosaicLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9821405522B3EBDA00ABFB3F /* Debug */,
+				9821405622B3EBDA00ABFB3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9824700422AF9B7D0037B409 /* Build configuration list for PBXProject "Mosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9824702222AF9B7E0037B409 /* Debug */,
+				9824702322AF9B7E0037B409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9824702422AF9B7E0037B409 /* Build configuration list for PBXNativeTarget "Mosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9824702522AF9B7E0037B409 /* Debug */,
+				9824702622AF9B7E0037B409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9824700122AF9B7D0037B409 /* Project object */;
+}
