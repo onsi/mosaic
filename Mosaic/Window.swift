@@ -230,17 +230,23 @@ class Window {
                       height: rect.height / screenFrame.height)
     }
     
-    private func adjustTo(_ normalizedRect: CGRect, _ screen: NSScreen) {
+    private func adjustTo(_ targetNormalizedRect: CGRect, _ screen: NSScreen) {
         let originFrame = NSRectToCGRect(self.screens.originScreen.frame)
         let screenFrame = NSRectToCGRect(screen.visibleFrame)
 
-        let rect = CGRect(x: screenFrame.minX + screenFrame.width * normalizedRect.minX,
-                          y: originFrame.height - screenFrame.maxY + screenFrame.height * normalizedRect.minY,
-                          width: screenFrame.width * normalizedRect.width,
-                          height: screenFrame.height * normalizedRect.height)
-        set(size: rect.size)
-        set(position: rect.origin)
-        set(size: rect.size)
+        let rect = CGRect(x: screenFrame.minX + screenFrame.width * targetNormalizedRect.minX,
+                          y: originFrame.height - screenFrame.maxY + screenFrame.height * targetNormalizedRect.minY,
+                          width: screenFrame.width * targetNormalizedRect.width,
+                          height: screenFrame.height * targetNormalizedRect.height)
+        
+        let currentNormalizedRect = self.normalizedRect(in: screen)
+        if currentNormalizedRect.minX + targetNormalizedRect.width > 1.0 || currentNormalizedRect.minY + targetNormalizedRect.height > 1.0 {
+            set(position: rect.origin)
+            set(size: rect.size)
+        } else {
+            set(size: rect.size)
+            set(position: rect.origin)
+        }
     }
     
     func isSheet() -> Bool {
